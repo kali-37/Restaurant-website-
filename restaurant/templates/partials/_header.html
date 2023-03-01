@@ -1,0 +1,25 @@
+{% load static %}
+<header>
+  <img src="{% static 'img/logo3.png' %}" />
+</header>
+<nav>
+  <ul>
+    <li><a href="{% url 'home' %}">Home</a></li>
+    <li><a href="{% url 'about' %}">About</a></li>
+    <li><a href="{% url 'menu' %}">Menu</a></li>
+    <li><a href="{% url 'book' %}">Book</a></li>
+  </ul>
+</nav>
+
+
+{% comment %} 
+from PIL import Image
+
+# Open the image file
+image = Image.open('path/to/image.jpg')
+
+# Resize the image to a smaller size
+image = image.resize((800, 600))
+
+# Compress the image and save it
+image.save('path/to/new_image.jpg', optimize=True, quality=50) {% endcomment %}
